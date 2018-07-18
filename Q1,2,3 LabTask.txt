@@ -1,0 +1,4 @@
+Q1:Take user input and take Random Number between 1 to 10 if user input match with random number value
+Q2:Take user age and  Check User Capable For Vote or not ?
+Q3:Enter user salary and experience if user experience Greater then  10 then minue 5% tax from its salary and add 2000 in its remaining salary
+if user experience smaller then  10 then minus 2% tax from its salary and add 1200 in its remaining salary.

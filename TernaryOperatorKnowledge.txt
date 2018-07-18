@@ -1,0 +1,30 @@
+
+
+//Check Difference between if and ternary
+
+ ran 100 million Ternary Operators and 100 million If-Else statements and recorded the performance of each. Here is the code:
+
+Stopwatch s = new Stopwatch();
+// System.Diagnostics Stopwatch
+int test = 0;
+s.Start();
+for(int a = 0; a < 100000000; a++)
+    test = a % 50 == 0 ? 1 : 2;
+s.Stop();
+
+s.Restart();
+for(int b = 0; b < 100000000; b++)
+{
+    if(b % 50 == 0)
+        test = 1;
+    else
+        test = 2; 
+}
+s.Stop();
+Here is the results (ran on an Intel Atom 1.66ghz with 1gb ram and I know, it sucks):
+
+Ternary Operator: 5986 milliseconds or 0.00000005986 seconds per each operator.
+
+If-Else: 5667 milliseconds or 0.00000005667 seconds per each statement.
+
+Don't forget that I ran 100 million of them, and I don't think 0.00000000319 seconds difference between the two matters that much.
